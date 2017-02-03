@@ -20,6 +20,12 @@ public class MathOperators : MonoBehaviour {
 		addition = 1;
 		// += Adds to a current total.
 		subtraction -= 10;
+		subtraction -= 11;
+		subtraction -= 14;
+		subtraction -= 20 * 3;
+		subtraction -= 7 + 3;
+
+
 
 		// -= Subtracts from value's total.
 	}
