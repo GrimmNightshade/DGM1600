@@ -7,31 +7,28 @@ public class Total : MonoBehaviour {
     public float total;
     public Calculation C;
     public Display D;
+    public Enemy_List E;
 
-    float Cek(float a, float b)
-    {
-        switch (C.mod)
-        {
-            case "+":
-                return (a + b);
-            case "-":
-                return (a - b);
-            case "*":
-                return (a * b);
-            case "/":
-                return (a / b);
-            default:
-                return (a);
-        }
-    }
     public void go()
     {
         if (mode == 3)
         {
-            total = Cek(C.numberA(), C.numberB());
+            total = C.Cek(C.numberA(), C.numberB());
             D.textDisplay.text = total.ToString();
-            mode = 1;
+
+            // Looks through Enemy list to see if the toal is equal to one of the enemies numbers.
+
+            for (int i = 0; i < E.enemy.Count; i++)
+            {  
+                if (total == E.enemy[i])
+                {
+                    print("Got One," + "" + E.enemy[i]);
+ 
+                }
+            }
         }
-    }
+      mode = 1;
+   }
 }
+
 
