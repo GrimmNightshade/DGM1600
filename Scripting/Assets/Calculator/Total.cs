@@ -23,11 +23,16 @@ public class Total : MonoBehaviour {
                 if (total == E.enemy[i])
                 {
                     print("Got One," + "" + E.enemy[i]);
- 
+
                 }
             }
         }
       mode = 1;
+
+        if (mode == 7)
+        {
+            Destroy(gameObject);
+        }
    }
 }
 
