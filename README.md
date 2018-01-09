@@ -1,4 +1,4 @@
 # DGM1600
-This place is for me, GrimmNightshade to store class work
+This place is for me, GrimmNightshade to store old class work
 
-For Class Work
+
